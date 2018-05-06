@@ -1,0 +1,40 @@
+{
+	"name": "Sweaty - Activity Tracker", // Long name of app: used at splash creen.
+	"short_name": "Sweaty", // Short name of app: used below icon.
+	"start_url": "/index.html", // Page to go when user taps the app icon.
+	"scope": ".", // Which page are included in our "PWA Experience". . means all.
+	"display": "standalone", // Standalone means, no url bar shown at the top.
+	"background_color": "#fff", // Color shown while the app is loading (splash).
+	"theme_color": "#3f51b5", // Color t show, e.g on top bar in task switcher.
+	"description": "Keep running until you're super swaty!", // Used as e.g. favourite.
+	"dir": "lrt", // Reading direction of the app.
+	"lang": "en-US", // Main language of the app.
+	"orientation": "portrait-primary", // Whitch orientation app showuld be opened when you click app's icon.
+									  // Careful not to restrict user to a unique orientation.
+	// The browser will use the best fit one. This will be shown at homescreen.
+	"icon": [
+		{
+			"src": "/src/images/icons/app-icon-48x48.png", // icon path.
+			"type": "image.png",
+			"sizes": "48x48" // browser chooses the best one for given device.
+		},
+		{
+			"src": "/src/images/icons/app-icon-96x96.png",
+			"type": "image.png",
+			"sizes": "96x96"
+		}
+
+		// have 128x128 is great.
+		// have 512x512 is also great.
+	],
+
+	// If you have, for example a native application for your pwa application,
+	// the browser can choose to display the native.
+	"related_applications": [{
+		"platform": "play",
+		"url": "https://play.google.com/store/apps/details?id=com.example.app1",
+		"id": "com.example.app1"
+	}]
+
+
+}
